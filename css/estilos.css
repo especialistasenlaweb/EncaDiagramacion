@@ -1,9 +1,9 @@
 
 @keyframes juanma{
     0%{left:0}
-    30%{left:50px}
-    40%{left:200px}
-    50%{left:500px}
+    30%{left:15%}
+    40%{left:30%}
+    50%{left:100%}
     100%{left:0}
 }
 body{
