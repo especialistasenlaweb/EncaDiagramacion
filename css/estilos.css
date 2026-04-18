@@ -1,0 +1,92 @@
+
+@keyframes juanma{
+    0%{left:0}
+    30%{left:50px}
+    40%{left:200px}
+    50%{left:500px}
+    100%{left:0}
+}
+body{
+    background:lightblue;
+}
+h1{
+    animation:juanma 2 alternate 5s;
+    color:darkblue;
+    position:relative;
+}
+.contenedor{
+    align-items:center;
+    border:solid;
+    display:flex;
+    height:450px;
+    gap:20px;
+    justify-content:center;
+}
+
+.contenedor div{
+    border:solid;
+    height:200px;
+    width:200px;
+}
+
+.parte1{
+    background:orange;
+}
+.parte2{
+    background:tomato;
+}
+.parte3{
+    background:darkblue;
+}
+@media print{
+    .parte1,.parte3,button{
+        display:none;
+    }
+    .contenedor div{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:700px){
+    button{
+        display:none;
+    }
+    .contenedor{
+        flex-direction:column;
+    }
+    .contenedor div{
+        width:100%;
+    }
+    .parte3{
+        order:2;
+    }
+    .parte2{
+        order:1;
+    }
+    .parte1{
+        order:3;
+    }
+
+
+    @keyframes javier{
+        0%{
+            background:lightblue;
+        }
+        50%{
+            background:darkblue;
+            color:white;
+            
+        }
+        100%{
+            background:lighblue;
+            color:#000;
+        }
+    } 
+    body{
+        animation:javier   1s;
+        /* background:red; */
+    }
+    h1{
+        color:white;
+    }
+}
